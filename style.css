@@ -1,0 +1,669 @@
+.sidebar-nav {
+    margin-top: 20px;
+    padding: 0;
+    list-style: none;
+}
+.main_table {
+	width: 75%;
+	border-collapse: collapse;
+
+}
+
+th{
+	height: 40px;
+
+}
+th,td{
+	padding: 15px;
+	text-align: left;
+	border-bottom: 1px solid #ddd;
+	vertical-align: top;
+}
+
+tr:hover{
+	background-color: #f5f5f5
+}
+
+div.main_table{
+	position: relative;
+	left: 250px;
+	top: -50px;
+
+}
+div.col-sm-2{
+	position: relative;
+	top: 62px;
+
+}
+.top_menu{
+	width: 75%;
+
+}
+div.top_menu{
+	position: relative;
+	top: -1200px;
+	left: 300px;
+}
+.form-control{
+	
+	margin-right: 5px;
+}
+header{
+position: absolute;
+width: 1440px;
+height: 130px;
+left: 0px;
+top: 0px;
+
+background: #113F67;
+border: 2px solid #226597;
+box-sizing: border-box;
+}
+
+#header_description{
+position: absolute;
+width: 854px;
+height: 92px;
+left: 42px;
+top: 19px;
+
+font-family: Karla;
+font-style: normal;
+font-weight: normal;
+font-size: 64px;
+line-height: normal;
+
+color: #FFFFFF;
+
+}
+
+a[href='#hidden_auth']{
+	position: absolute;
+width: 301px;
+height: 42px;
+left: 1113px;
+top: 44px;
+
+font-family: Karla;
+font-style: normal;
+font-weight: normal;
+font-size: 36px;
+line-height: normal;
+
+color: #FFFFFF;
+}
+
+#top_menu{
+	position: absolute;
+width: 1440px;
+height: 89px;
+left: 0px;
+top: 130px;
+
+background: #87C0CD;
+}
+#butt_one{
+
+position: absolute;
+width: 220px;
+height: 88px;
+top: 30px;
+
+font-family: Karla;
+font-style: normal;
+font-weight: normal;
+font-size: 28px;
+line-height: normal;
+text-align: center;
+
+color: #FFFFFF;
+}
+#butt_two{
+
+position: absolute;
+width: 220px;
+height: 88px;
+left: 220px;
+top: 30px;
+
+font-family: Karla;
+font-style: normal;
+font-weight: normal;
+font-size: 28px;
+line-height: normal;
+text-align: center;
+
+color: #FFFFFF;
+}
+#butt_three{
+
+position: absolute;
+width: 220px;
+height: 88px;
+left: 440px;
+top: 30px;
+
+font-family: Karla;
+font-style: normal;
+font-weight: normal;
+font-size: 28px;
+line-height: normal;
+text-align: center;
+
+color: #FFFFFF;
+}
+#butt_four{
+
+position: absolute;
+width: 220px;
+height: 88px;
+left: 660px;
+top: 30px;
+
+font-family: Karla;
+font-style: normal;
+font-weight: normal;
+font-size: 28px;
+line-height: normal;
+text-align: center;
+
+color: #FFFFFF;
+}
+.auth_header{
+position: absolute;
+width: 656px;
+height: 88px;
+background: #113F67;
+}
+#text_auth{
+position: absolute;
+left:46px;
+top:26px;
+font-family: Karla;
+font-style: normal;
+font-weight: normal;
+font-size: 36px;
+line-height: normal;
+
+color: #FFFFFF;
+
+text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+#text_reg{
+position: absolute;
+left:46px;
+top:26px;
+font-family: Karla;
+font-style: normal;
+font-weight: normal;
+font-size: 36px;
+line-height: normal;
+
+color: #FFFFFF;
+
+text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+#close_auth {
+  position: absolute;
+  right: 32px;
+  top: 32px;
+  width: 32px;
+  height: 32px;
+  opacity: 0.3;
+background: #FFFFFF;
+
+  /*display:inline-block;
+  text-decoration: none;
+  cursor: pointer;*/
+}
+#close_auth:hover {
+  opacity: 1;
+}
+#close_auth:before{
+position: absolute;
+  left: 15px;
+  content: ' ';
+  height: 33px;
+  width: 2px;
+  background-color: #113F67;
+  transform: rotate(45deg);
+}
+#close_auth:after {
+  position: absolute;
+  left: 15px;
+  content: ' ';
+  height: 33px;
+  width: 2px;
+  background-color: #113F67;
+  transform: rotate(-45deg);
+}
+#close_reg {
+position: absolute;
+  right: 32px;
+  top: 32px;
+  width: 32px;
+  height: 32px;
+  opacity: 0.3;
+background: #FFFFFF;
+}
+#close_reg:hover {
+  opacity: 1;
+}
+#close_reg:before{
+position: absolute;
+  left: 15px;
+  content: ' ';
+  height: 33px;
+  width: 2px;
+  background-color: #113F67;
+  transform: rotate(45deg);
+}
+#close_reg:after {
+  position: absolute;
+  left: 15px;
+  content: ' ';
+  height: 33px;
+  width: 2px;
+  background-color: #113F67;
+  transform: rotate(-45deg);
+}
+#label_login{
+position: absolute;
+width: 250px;
+height: 49px;
+left: 38px;
+top: 118px;
+
+}
+#label_password{
+position: absolute;
+width: 250px;
+height: 49px;
+left: 38px;
+top: 258px;
+
+}
+.labels_auth{
+font-family: Karla;
+font-style: normal;
+font-weight: normal;
+font-size: 28px;
+line-height: normal;
+
+color: #113F67;
+}
+.labels_reg{
+font-family: Karla;
+font-style: normal;
+font-weight: normal;
+font-size: 28px;
+line-height: normal;
+
+color: #113F67;
+}
+#label_email{
+position: absolute;
+width: 250px;
+height: 49px;
+left: 38px;
+top: 101px;
+
+}
+#field_email{
+position: absolute;
+width: 442px;
+height: 55px;
+left: 38px;
+top: 150px;
+
+background: #FFFFFF;
+border: 1px solid #639DD1;
+box-sizing: border-box;
+}
+#label_password_reg{
+position: absolute;
+width: 250px;
+height: 49px;
+left: 38px;
+top: 210px;
+
+}
+#field_password_reg{
+position: absolute;
+width: 442px;
+height: 55px;
+left: 38px;
+top: 254px;
+
+background: #FFFFFF;
+border: 1px solid #639DD1;
+box-sizing: border-box;
+}
+#label_password{
+position: absolute;
+width: 250px;
+height: 49px;
+left: 38px;
+top: 258px;
+
+}
+#label_confirm{
+position: absolute;
+width: 250px;
+height: 49px;
+left: 38px;
+top: 315px;
+
+}
+#field_con_password{
+position: absolute;
+width: 442px;
+height: 55px;
+left: 38px;
+top: 358px;
+
+background: #FFFFFF;
+border: 1px solid #639DD1;
+box-sizing: border-box;
+}
+#field_login{
+position: absolute;
+width: 442px;
+height: 55px;
+left: 38px;
+top: 185px;
+
+background: #FFFFFF;
+border: 1px solid #639DD1;
+box-sizing: border-box;
+}
+#field_password{
+	position: absolute;
+width: 442px;
+height: 55px;
+left: 38px;
+top: 324px;
+
+background: #FFFFFF;
+border: 1px solid #639DD1;
+box-sizing: border-box;
+}
+#button_login{
+	position: absolute;
+width: 213px;
+height: 46px;
+left: 38px;
+top: 428px;
+background: #113F67;
+border-radius: 15px;
+}
+#log_button{
+margin: 0;
+font-family: Karla;
+font-style: normal;
+font-weight: normal;
+font-size: 28px;
+line-height: normal;
+text-align: center;
+color: #FFFFFF
+}
+#button_register{
+	position: absolute;
+width: 213px;
+height: 46px;
+left: 140px;
+top: 450px;
+border: 1.5px solid #113F67;
+border-radius: 15px;
+background: #113F67;
+}
+#reg_button_r{
+margin: 0;
+font-family: Karla;
+font-style: normal;
+font-weight: normal;
+font-size: 28px;
+line-height: normal;
+text-align: center;
+color: #FFFFFF;
+}
+#button_create{
+	position: absolute;
+width: 213px;
+height: 46px;
+left: 268px;
+top: 428px;
+background: #113F67;
+border-radius: 15px;
+background: #FFFFFF;
+}
+#reg_button_l{
+margin: 0;
+font-family: Karla;
+font-style: normal;
+font-weight: normal;
+font-size: 28px;
+line-height: normal;
+text-align: center;
+color: #113F67;
+}
+#auth{
+position: absolute;
+width: 660px;
+height: 599px;
+left: 389px;
+top: 132px;
+border: 1.5px solid #113F67;
+box-sizing: border-box;
+background: #FFFFFF
+}
+#reg{
+position: absolute;
+width: 660px;
+height: 599px;
+left: 389px;
+top: 132px;
+border: 1.5px solid #113F67;
+box-sizing: border-box;
+background: #FFFFFF
+}
+#hidden_auth{
+background: rgba(102, 102, 102, 0.5);
+width: 100%;
+height: 100%;
+position: absolute;
+top: 0;
+left: 0;
+display: none;
+}
+#hidden_auth:target{display:block;}
+#hidden_reg{
+background: rgba(102, 102, 102, 0.5);
+width: 100%;
+height: 100%;
+position: absolute;
+top: 0;
+left: 0;
+display: none;
+}
+#hidden_reg:target{display:block;}
+.side_menu{
+margin: 0 auto;
+
+}
+#main_table{
+position: absolute;
+width: 215px;
+height: 30px;
+left: 1px;
+top: 253px;
+
+font-family: Karla;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: normal;
+text-align: center;
+
+color: #000000;
+}
+#ib{
+position: absolute;
+width: 215px;
+height: 30px;
+left: 1px;
+top: 320px;
+
+font-family: Karla;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: normal;
+text-align: center;
+
+color: #000000;	
+}
+#kb{
+position: absolute;
+width: 215px;
+height: 30px;
+left: 1px;
+top: 360px;
+
+font-family: Karla;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: normal;
+text-align: center;
+
+color: #000000;	
+}
+#itss{
+position: absolute;
+width: 215px;
+height: 30px;
+left: 1px;
+top: 400px;
+
+font-family: Karla;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: normal;
+text-align: center;
+
+color: #000000;	
+}
+#pm{
+position: absolute;
+width: 215px;
+height: 30px;
+left: 1px;
+top: 440px;
+
+font-family: Karla;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: normal;
+text-align: center;
+
+color: #000000;	
+}
+#ivt{
+position: absolute;
+width: 215px;
+height: 30px;
+left: 1px;
+top: 480px;
+
+font-family: Karla;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: normal;
+text-align: center;
+
+color: #000000;	
+}
+#update_table{
+position: absolute;
+width: 215px;
+height: 30px;
+left: 1px;
+top: 583px;
+
+font-family: Karla;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: normal;
+text-align: center;
+
+color: #000000;	
+}
+
+#first_hr{ 
+    border: 0; 
+    height: 1px;
+    width: 200px;
+    left: 15px;
+    top: 270px;
+    position: absolute;
+    margin: 0.5em 0; /* Keep other elements away from pseudo elements*/
+}
+#second_hr{ 
+    border: 0; 
+    height: 1px;
+    width: 200px;
+    left: 15px;
+    top: 536px;
+    position: absolute;
+    margin: 0.5em 0; /* Keep other elements away from pseudo elements*/
+}
+#third_hr{ 
+    border: 0; 
+    height: 1px;
+    width: 200px;
+    left: 15px;
+    top: 600px;
+    position: absolute;
+    margin: 0.5em 0; /* Keep other elements away from pseudo elements*/
+}
+hr.line_menu:before {
+    top: -0.5em;
+    height: 1em;
+}
+hr.line_menu:after {
+    content:'';
+    height: 0.5em;   /* half the height of :before */
+    top: 1px;        /* height of hr*/
+}
+
+hr.line_menu:before, hr.line_menu:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+}
+
+hr.line_menu, hr.line_menu:before {
+    background: -moz-radial-gradient(center, ellipse cover, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0) 75%);
+    background: -webkit-gradient(radial, center center, 0px, center center, 75%, color-stop(0%,rgba(0,0,0,0.1)), color-stop(75%,rgba(0,0,0,0)));
+    background: -webkit-radial-gradient(center, ellipse cover, rgba(0,0,0,0.1) 0%,rgba(0,0,0,0) 75%);
+    background: -o-radial-gradient(center, ellipse cover, rgba(0,0,0,0.1) 0%,rgba(0,0,0,0) 75%);
+    background: -ms-radial-gradient(center, ellipse cover, rgba(0,0,0,0.1) 0%,rgba(0,0,0,0) 75%);
+    background: radial-gradient(ellipse at center, rgba(0,0,0,0.1) 0%,rgba(0,0,0,0) 75%);
+}
+
+hr.line_menu:after {
+    background: #f4f4f4;
+}
+#example{
+position: absolute;
+width: 1182px;
+height: 806px;
+left: 257px;
+top: 221px;
+overflow: scroll;
+}

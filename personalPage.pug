@@ -1,0 +1,21 @@
+doctype html
+html(lang='en')
+  head
+    title= title
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js')
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    script(src="https://cdn.jsdelivr.net/npm/handsontable@7.0.0/dist/handsontable.full.min.js")
+    link(href="https://cdn.jsdelivr.net/npm/handsontable@7.0.0/dist/handsontable.full.min.css" rel="stylesheet" media="screen")
+  body
+   form(method='POST' action='/user/login')
+    h2 Please sign in
+    label(for='Input email' class='sr-only') Email adress:
+    input(type='email', placeholder="Email address" required autofocus,name='email',id="inputEmail",class='form-control') 
+    label(for='Input password' class='sr-only') Password:
+    input(type='password' id='inputPassword',name='password', class='form-control', placeholder='Password' required)
+    button.btn.btn-primary(type='submit') Sign in
+    br
+   form(method='GET' action='/user/to_registration')
+    button.btn.btn-primary(type='submit') Registration

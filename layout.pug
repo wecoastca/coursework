@@ -1,0 +1,55 @@
+doctype html
+html(lang='en')
+  head
+    title= title
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css')
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js')
+    script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js')
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    script(src='https://cdn.jsdelivr.net/npm/handsontable@7.0.2/dist/handsontable.full.min.js')
+    link(href='https://cdn.jsdelivr.net/npm/handsontable@7.0.2/dist/handsontable.full.min.css',rel='stylesheet',media='screen')
+  body
+    div(class='header')
+     header
+      div(id='header_description')
+       p University committee
+      div(id='personal_page')
+       a(href='#hidden_auth') личный кабинет
+      div(id='top_menu')
+       a(href='/', id='butt_one') Абитуриенты
+       a(href='/', id='butt_two') Экспорт
+       a(href='/', id='butt_three') Импорт
+       a(href='/analytics', id='butt_four') Аналитика
+    block content
+    div(id='hidden_auth')
+     div(id='auth')
+      div(class='auth_header')
+       p(id='text_auth') Войдите в личный кабинет.
+       a(href='#' id='close_auth')
+      form(method='POST' action='/user/login')
+       label(for='Input login' class='labels_auth' id='label_login') Login
+       input(type='text',id='field_login',placeholder='Please, login',name='login')
+       label(for='Input password' class='labels_auth' id='label_password') Password
+       input(type='password',id='field_password',placeholder='Please, password',name='password')
+       button(type='submit', id='button_login') 
+        p(id='log_button') Log in
+      form(method='GET' action='#hidden_reg')
+       button(type='submit', id='button_create') 
+        p(id='reg_button_l') Create account
+    div(id= 'hidden_reg')
+     div(id='reg')
+      div(class='auth_header')
+       p(id='text_reg') Пройдите процесс регистрации.
+       a(href='#' id='close_reg')
+      form(method='POST' action='/user/register')
+       label(for='Input email' class='labels_reg' id='label_email') Email
+       input(type='email',id='field_email',placeholder='Please, email',name='email')
+       label(for='Input password' class='labels_reg' id='label_password_reg') Password
+       input(type='password',id='field_password_reg',placeholder='Please, password',name='password')
+       label(for='Input confirm password' class='labels_reg' id='label_confirm') Confirm password
+       input(type='password',id='field_con_password',placeholder='Please, confirm password',name='confirm_password')
+       button(type='submit', id='button_register') 
+        p(id='reg_button_r') Create account
+    

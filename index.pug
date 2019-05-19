@@ -1,0 +1,17 @@
+extends layout
+
+block content
+ div(class='side_menu')
+   a(href='/' id='main_table') Общая таблица
+   hr(class='line_menu',id='first_hr')
+   a(href='/' id='ib') ИБ
+   a(href='/' id='kb') КБ
+   a(href='/' id='itss') ИТСС
+   a(href='/' id='pm') ПМ
+   a(href='/' id='ivt') ИВТ
+   hr(class='line_menu',id='second_hr')
+   a(href='/' id='update_table') Обновить таблицу
+   hr(class='line_menu',id='third_hr')
+ div(id='example')
+  script(src='/javascripts/createTable.js')
+    

@@ -1,0 +1,26 @@
+doctype html
+html(lang='en')
+  head
+    title= title
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js')
+    link(rel='stylesheet', href='/stylesheets/style.css')
+  body
+    form(method='POST' action='/user/register')
+      h2 Please sign up
+      label(for='Input email' class='sr-only') Email adress:
+      input(type='email', placeholder="Email address" required autofocus,name='email',id="inputEmail",class='form-control') 
+      label(for='Input Username' class='sr-only') Username:
+      input(type='text', placeholder="Username" required autofocus,name='username',id="inputUsername",class='form-control')
+      label(for='Input FIO' class='sr-only') FIO:
+      input(type='text', placeholder="FIO" required autofocus,name='FIO',id="inputFIO",class='form-control') 
+      label(for='Input tel' class='sr-only') tel:
+      input(type='text', placeholder="tel" required autofocus,name='tel',id="inputTel",class='form-control')
+      label(for='Input password' class='sr-only') Password:
+      input(type='password' id='inputPassword',name='password', class='form-control', placeholder='Password' required)
+      label(for='Input Confirm password' class='sr-only') Confirm Password:
+      input(type='password' id='inputConfirmPassword',name='confirmationPassword', class='form-control', placeholder='Confirm Password' required)
+      br
+      button.btn.btn-primary(type='submit') Sign up
+
